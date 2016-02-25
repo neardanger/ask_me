@@ -1,0 +1,66 @@
+<h1> Edit Post </h1>
+
+
+
+<div class = 'container'>
+  <div class = "lead well">
+    <div class="media">
+      <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="http://gravatar.com/avatar/424242" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"> <%=@question.title%> </h4>
+    <%= @question.body %>
+</div>
+</div>
+</div>
+</div>
+
+<div class = "row">
+
+  <div>
+
+<div>
+  <button type = "button" class = "btn btn-success btn-sm" data-toggle='modal' da ta-target=#new-answer-modal>Submit New Answer</a>
+  </div>
+<hr>
+
+
+<div>
+  <button type = "button" class = "btn btn-danger btn-sm" ><%= link_to 'Delete Question', destroy_question_path %></a>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<% @question.answers.each do |answer|  %>
+<div class="media">
+  <div class="media-left">
+<a href="#">
+  <img class="media-object" src="http://gravatar.com/avatar/424242" alt="...">
+</a>
+</div>
+<div class="media-body">
+<h4 class="media-heading">A:<%=answer.title %></h4>
+<%= answer.body %>
+</div>
+</div>
+
+<% end %>
+
+</div>
+</div>
+</div>
+
+
+
+
+<%= render 'home/new_answer_form' %>

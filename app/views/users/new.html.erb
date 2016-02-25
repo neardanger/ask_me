@@ -1,0 +1,6 @@
+<h1>Add a User</h1>
+  <%= form_for @user do |u| %>
+  name: <%= u.text_field :username %><br><br>
+  password: <%= u.password_field :password %><br><br>
+    <%= u.submit %>
+    <% end %>

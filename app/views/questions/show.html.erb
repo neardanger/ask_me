@@ -1,0 +1,66 @@
+<div class = 'container'>
+  <div class = "lead well">
+    <div class="media">
+      <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="http://gravatar.com/avatar/424242" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"> <%=@question.title%> </h4>
+
+    <%= @question.body %>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class = "row">
+
+  <div>
+
+<div>
+  <button type = "button" class = "btn btn-success btn-sm" data-toggle='modal' data-target=#new-answer-modal>Submit New Answer</a>
+  </div>
+<hr>
+
+<button type = "button" class = "btn btn-danger btn-sm" ><%= link_to 'Edit (Admin Only)', edit_question_path %>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<% @question.answers.each do |answer|  %>
+<div class="media">
+  <div class="media-left">
+<a href="#">
+  <img class="media-object" src="http://gravatar.com/avatar/424242" alt="...">
+</a>
+</div>
+<div class="media-body">
+<h4 class="media-heading">A: <%=answer.title %></h4>
+<div><%= time_ago_in_words answer.created_at %> ago </div>
+<%= answer.body %>
+</div>
+</div>
+
+<% end %>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<%= render 'home/new_answer_form' %>
