@@ -49,9 +49,9 @@
                           </a>
                         </div>
                         <div class="media-body">
-                          <h4 class="media-heading">Q: <%= q.title %></h4>
+                          <h4 class="media-heading">Title: <%= q.title %></h4>
                           <div><%= time_ago_in_words q.created_at %> ago </div>
-                        <div> <%= q.body %></div>
+                        <div> Question: <%= q.body %></div>
                           <div>
                             <a href = '<%= question_path(q) %>' class = "btn btn-success btn-xs">View Answers</a>
                       </div>
