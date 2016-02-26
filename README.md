@@ -1,6 +1,6 @@
 Ask-Me
-Description: A quora/ask.fm hybrid where users and ask questions and receive answers to them;
-the website has one administrator that can edit
+Description: A quora/ask.fm hybrid where users can ask questions and receive answers to them;
+the website has administrators that can edit posts
 
 Technologies Used: Bootstrap, Ruby on rails, CSS, HTML, PostgreSQL, Heroku
 
@@ -13,7 +13,7 @@ administrator too, so they can delete or edit mean comments.
 
 Unsolved Problems:
 
-I should have added another model in the modeling process, a model called admin.
+I should have added another model in the modeling process. A model called admin.
 
 
 User Story
