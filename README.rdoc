@@ -2,27 +2,22 @@ Ask-Me
 Description: A quora/ask.fm hybrid where users and ask questions and receive answers to them;
 the website has one administrator that can edit
 
+
+User Story
+
+https://trello.com/b/cqPFeiwE/confession-website
+
+
 Installation
 
-TODO: Describe the installation process
+ https://ask-me-me.herokuapp.com/
 
 Usage
 
-TODO: Write usage instructions
+ Ask questions and answer questions
 
-Contributing
 
-Fork it!
-Create your feature branch: git checkout -b my-new-feature
-Commit your changes: git commit -am 'Add some feature'
-Push to the branch: git push origin my-new-feature
-Submit a pull request :D
-History
 
-TODO: Write history
 
-Credits
 
-TODO: Write credits
-
-License
+me
