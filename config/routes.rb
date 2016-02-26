@@ -3,18 +3,18 @@ Rails.application.routes.draw do
   resources :answers
   resources :questions, except: [:destroy]
   resources :users
-  get 'questions/:id/destroy' => 'questions#destroy', as: :destroy_question
+  resources :sessions, only: [:new,:create]
 
 
   root 'home#index'
+
+  get  '/sessions/new' => 'sessions#new'
+  get 'questions/:id/destroy' => 'questions#destroy', as: :destroy_question
   get '/home' => 'home#index'
-  
-
-
 
   get '/logout' => 'sessions#destroy', as: :logout
 
-  resources :sessions, only: [:new,:create]
+
 
 
 

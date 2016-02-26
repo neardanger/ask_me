@@ -1,28 +1,28 @@
-== README
+Ask-Me
+Description: A quora/ask.fm hybrid where users and ask questions and receive answers to them;
+the website has one administrator that can edit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Installation
 
-Things you may want to cover:
+TODO: Describe the installation process
 
-* Ruby version
+Usage
 
-* System dependencies
+TODO: Write usage instructions
 
-* Configuration
+Contributing
 
-* Database creation
+Fork it!
+Create your feature branch: git checkout -b my-new-feature
+Commit your changes: git commit -am 'Add some feature'
+Push to the branch: git push origin my-new-feature
+Submit a pull request :D
+History
 
-* Database initialization
+TODO: Write history
 
-* How to run the test suite
+Credits
 
-* Services (job queues, cache servers, search engines, etc.)
+TODO: Write credits
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+License

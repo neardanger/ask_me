@@ -27,6 +27,15 @@ redirect_to root_path
 
   end
 
+  def update
+
+    @question = Question.find(params[:id])
+    if @question.update_attributes(question_params)
+      redirect_to root_path @question
+    end
+  end
+
+
   def destroy
 @question = Question.find(params[:id])
 if @question.destroy
